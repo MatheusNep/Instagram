@@ -7,15 +7,15 @@ import android.view.View;
 
 import com.parse.starter.R;
 
-public class LoginActivity extends AppCompatActivity {
+public class RegisterActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_register);
     }
-    public void openUserRegistration(View view){
-        Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
+    public void openUserLogin(View view){
+        Intent intent = new Intent(RegisterActivity.this, LoginActivity.class);
         startActivity(intent);
     }
 }

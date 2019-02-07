@@ -1,15 +1,15 @@
 [
     {
-        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
-        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
+        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
+        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\notification_template_big_media_narrow.xml",
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\notification_template_big_media_narrow.xml"
     },
     {
-        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
-        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_activity_chooser_view_list_item.xml",
+        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_activity_chooser_view_list_item.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\select_dialog_item_material.xml",
@@ -78,6 +78,10 @@
     {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_select_dialog_material.xml",
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\layout\\abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\activity_register.xml",
+        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\src\\main\\res\\layout\\activity_register.xml"
     },
     {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\layout\\abc_action_menu_item_layout.xml",
