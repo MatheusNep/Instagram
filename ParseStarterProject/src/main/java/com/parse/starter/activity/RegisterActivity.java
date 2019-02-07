@@ -60,6 +60,7 @@ public class RegisterActivity extends AppCompatActivity {
             public void done(ParseException e) {
                 if (e == null){// sucesso ao salvar
                     Toast.makeText(RegisterActivity.this,"success in saving the user", Toast.LENGTH_LONG).show();
+                    ParseUser.logOut();
                     openUserLogin();
                 }else {//falha ao salvar usuário
                     ParseError parseError = new ParseError();
