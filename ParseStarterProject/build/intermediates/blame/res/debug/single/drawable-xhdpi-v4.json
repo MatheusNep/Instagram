@@ -4,6 +4,10 @@
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xhdpi-v4\\abc_scrubber_control_off_mtrl_alpha.png"
     },
     {
+        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_action_camera.png",
+        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\src\\main\\res\\drawable-xhdpi\\ic_action_camera.png"
+    },
+    {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png",
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.0.0\\res\\drawable-xhdpi-v4\\abc_list_divider_mtrl_alpha.9.png"
     },
