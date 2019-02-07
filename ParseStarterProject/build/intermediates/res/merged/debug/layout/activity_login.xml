@@ -13,7 +13,8 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout">
 
 
     <ImageView
@@ -29,7 +30,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/et_login_nameId"
         android:textColor="@android:color/white"
-
         android:hint="User name"
         android:textColorHint="@android:color/white"
         android:padding="16dp"
@@ -65,6 +65,8 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
+    </RelativeLayout>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,8 +74,7 @@
         android:text="@string/create_account"
         android:textColor="@android:color/white"
         android:id="@+id/tv_login_createaccId"
-        android:layout_below="@+id/bt_loginId"
-        android:layout_centerHorizontal="true"
-        android:onClick="openUserRegistration" />
-    </RelativeLayout>
+        android:onClick="openUserRegistration"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

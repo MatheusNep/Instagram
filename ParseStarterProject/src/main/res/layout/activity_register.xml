@@ -26,6 +26,7 @@
         android:inputType="textPersonName"
         android:background="@drawable/textbox_background"
         android:ems="10"
+        android:textColor="@android:color/white"
         android:padding="16dp"
         android:id="@+id/et_signup_nameId"
         android:layout_below="@+id/imageView2"
@@ -40,6 +41,7 @@
         android:inputType="textEmailAddress"
         android:background="@drawable/textbox_background"
         android:ems="10"
+        android:textColor="@android:color/white"
         android:padding="16dp"
         android:id="@+id/et_signup_emailId"
         android:layout_below="@+id/et_signup_nameId"
@@ -54,6 +56,7 @@
         android:inputType="textPassword"
         android:background="@drawable/textbox_background"
         android:ems="10"
+        android:textColor="@android:color/white"
         android:padding="16dp"
         android:id="@+id/et_signup_passwordId"
         android:layout_below="@+id/et_signup_emailId"
@@ -66,13 +69,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/button_sign_up"
-        android:id="@+id/bt_loginId"
+        android:id="@+id/bt_signupId"
         android:textColor="@android:color/white"
         android:background="@drawable/background_button"
         android:layout_marginTop="33dp"
         android:layout_below="@+id/et_signup_passwordId"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+         />
 
     <TextView
         android:layout_width="wrap_content"
@@ -81,7 +83,7 @@
         android:text="@string/sign_in"
         android:id="@+id/tv_signup_lloginId"
         android:textColor="@android:color/white"
-        android:layout_below="@+id/bt_loginId"
+        android:layout_below="@+id/bt_signupId"
         android:layout_centerHorizontal="true"
         android:onClick="openUserLogin" />
 </RelativeLayout>
