@@ -504,14 +504,14 @@ int id action_bar_subtitle 0x7f0b0025
 int id action_bar_title 0x7f0b0024
 int id action_context_bar 0x7f0b0046
 int id action_divider 0x7f0b0069
-int id action_logout 0x7f0b0075
+int id action_logout 0x7f0b0076
 int id action_menu_divider 0x7f0b0002
 int id action_menu_presenter 0x7f0b0003
 int id action_mode_bar 0x7f0b0042
 int id action_mode_bar_stub 0x7f0b0041
 int id action_mode_close_button 0x7f0b0026
-int id action_settings 0x7f0b0074
-int id action_share 0x7f0b0076
+int id action_settings 0x7f0b0075
+int id action_share 0x7f0b0077
 int id activity_chooser_view_content 0x7f0b0027
 int id add 0x7f0b0013
 int id alertTitle 0x7f0b0033
@@ -555,6 +555,7 @@ int id line3 0x7f0b006e
 int id listMode 0x7f0b0009
 int id list_item 0x7f0b002b
 int id lv_home 0x7f0b0063
+int id lv_users 0x7f0b0064
 int id media_actions 0x7f0b0068
 int id middle 0x7f0b001c
 int id multiply 0x7f0b0014
@@ -599,7 +600,6 @@ int id tb_main 0x7f0b005a
 int id text 0x7f0b006f
 int id text2 0x7f0b006d
 int id textSpacerNoButtons 0x7f0b0037
-int id textView2 0x7f0b0064
 int id time 0x7f0b006b
 int id title 0x7f0b002d
 int id title_template 0x7f0b0032
@@ -608,6 +608,7 @@ int id topPanel 0x7f0b0031
 int id tv_login_createaccId 0x7f0b0059
 int id tv_signup_lloginId 0x7f0b0062
 int id tv_tab 0x7f0b0073
+int id tv_user_name 0x7f0b0074
 int id up 0x7f0b0008
 int id useLogo 0x7f0b0012
 int id vp_main 0x7f0b005b
@@ -663,6 +664,7 @@ int layout select_dialog_singlechoice_material 0x7f04002a
 int layout support_simple_spinner_dropdown_item 0x7f04002b
 int layout tab_view 0x7f04002c
 int layout toolbar 0x7f04002d
+int layout users_list 0x7f04002e
 int menu menu_main 0x7f0d0000
 int mipmap ic_launcher 0x7f030000
 int string abc_action_bar_home_description 0x7f060000

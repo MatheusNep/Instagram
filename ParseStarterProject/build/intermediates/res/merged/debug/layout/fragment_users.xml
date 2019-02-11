@@ -5,14 +5,11 @@
     tools:context="com.parse.starter.fragments.UsersFragment">
 
 
-
-    <TextView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="USERS"
-        android:textColor="@android:color/black"
-        android:id="@+id/textView2"
-        android:layout_gravity="center" />
-
+        android:id="@+id/lv_users"
+        android:divider="@color/darkGrey"
+        android:dividerHeight="1dp"
+        android:layout_gravity="center_horizontal|top" />
 </FrameLayout>

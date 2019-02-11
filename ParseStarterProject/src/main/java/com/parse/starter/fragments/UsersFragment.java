@@ -6,13 +6,28 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 
+import com.parse.FindCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
+import com.parse.ParseUser;
 import com.parse.starter.R;
+import com.parse.starter.adapter.UsersAdapter;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class UsersFragment extends Fragment {
+    private ListView listView;
+    private ArrayAdapter<ParseUser> adapter;
+    private ArrayList<ParseUser> users;
+    private ParseQuery<ParseUser> query;
 
 
     public UsersFragment() {
@@ -24,7 +39,44 @@ public class UsersFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_users, container, false);
+        View view = inflater.inflate(R.layout.fragment_users, container, false);
+
+        users  = new ArrayList<>();
+        listView = (ListView) view.findViewById(R.id.lv_users);
+        adapter = new UsersAdapter(getActivity(), users );
+        listView.setAdapter(adapter);
+
+        getUsers();
+
+
+
+        return view;
+    }
+
+    private void getUsers(){
+        query = ParseUser.getQuery();
+        query.whereNotEqualTo("username", ParseUser.getCurrentUser().getUsername());
+        query.orderByAscending("username");
+        query.findInBackground(new FindCallback<ParseUser>() {
+            @Override
+            public void done(List<ParseUser> objects, ParseException e) {
+                if (e==null){
+
+                    if (objects.size()>0){
+                        users.clear();
+                        for (ParseUser parseUser : objects){
+                            users.add(parseUser);
+
+                        }
+                        adapter.notifyDataSetChanged();
+                    }
+                }else{
+
+                }
+            }
+        });
+
+
     }
 
 }

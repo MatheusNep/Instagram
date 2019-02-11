@@ -1797,14 +1797,14 @@ containing a value of this type.
         public static final int action_bar_title=0x7f0b0024;
         public static final int action_context_bar=0x7f0b0046;
         public static final int action_divider=0x7f0b0069;
-        public static final int action_logout=0x7f0b0075;
+        public static final int action_logout=0x7f0b0076;
         public static final int action_menu_divider=0x7f0b0002;
         public static final int action_menu_presenter=0x7f0b0003;
         public static final int action_mode_bar=0x7f0b0042;
         public static final int action_mode_bar_stub=0x7f0b0041;
         public static final int action_mode_close_button=0x7f0b0026;
-        public static final int action_settings=0x7f0b0074;
-        public static final int action_share=0x7f0b0076;
+        public static final int action_settings=0x7f0b0075;
+        public static final int action_share=0x7f0b0077;
         public static final int activity_chooser_view_content=0x7f0b0027;
         public static final int add=0x7f0b0013;
         public static final int alertTitle=0x7f0b0033;
@@ -1848,6 +1848,7 @@ containing a value of this type.
         public static final int listMode=0x7f0b0009;
         public static final int list_item=0x7f0b002b;
         public static final int lv_home=0x7f0b0063;
+        public static final int lv_users=0x7f0b0064;
         public static final int media_actions=0x7f0b0068;
         public static final int middle=0x7f0b001c;
         public static final int multiply=0x7f0b0014;
@@ -1892,7 +1893,6 @@ containing a value of this type.
         public static final int text=0x7f0b006f;
         public static final int text2=0x7f0b006d;
         public static final int textSpacerNoButtons=0x7f0b0037;
-        public static final int textView2=0x7f0b0064;
         public static final int time=0x7f0b006b;
         public static final int title=0x7f0b002d;
         public static final int title_template=0x7f0b0032;
@@ -1901,6 +1901,7 @@ containing a value of this type.
         public static final int tv_login_createaccId=0x7f0b0059;
         public static final int tv_signup_lloginId=0x7f0b0062;
         public static final int tv_tab=0x7f0b0073;
+        public static final int tv_user_name=0x7f0b0074;
         public static final int up=0x7f0b0008;
         public static final int useLogo=0x7f0b0012;
         public static final int vp_main=0x7f0b005b;
@@ -1960,6 +1961,7 @@ containing a value of this type.
         public static final int support_simple_spinner_dropdown_item=0x7f04002b;
         public static final int tab_view=0x7f04002c;
         public static final int toolbar=0x7f04002d;
+        public static final int users_list=0x7f04002e;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;
