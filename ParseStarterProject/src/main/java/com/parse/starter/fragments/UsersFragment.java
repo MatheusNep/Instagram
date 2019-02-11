@@ -1,11 +1,14 @@
 package com.parse.starter.fragments;
 
 
+import android.content.Intent;
+import android.content.IntentSender;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
@@ -15,6 +18,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.starter.R;
+import com.parse.starter.activity.FeedUsersActivity;
 import com.parse.starter.adapter.UsersAdapter;
 
 import java.util.ArrayList;
@@ -36,7 +40,7 @@ public class UsersFragment extends Fragment {
 
 
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+    public View onCreateView(final LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_users, container, false);
@@ -47,6 +51,18 @@ public class UsersFragment extends Fragment {
         listView.setAdapter(adapter);
 
         getUsers();
+
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                ParseUser parseUser = users.get(position);
+
+                Intent intent = new Intent(getActivity(), FeedUsersActivity.class);
+                intent.putExtra("username", parseUser.getUsername());
+
+                startActivity(intent);
+            }
+        });
 
 
 

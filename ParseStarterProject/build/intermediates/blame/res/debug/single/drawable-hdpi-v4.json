@@ -56,6 +56,10 @@
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_menu_hardkey_panel_mtrl_mult.9.png"
     },
     {
+        "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_keyboard_arrow_left.png",
+        "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\src\\main\\res\\drawable-hdpi\\ic_keyboard_arrow_left.png"
+    },
+    {
         "merged": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png",
         "source": "C:\\Users\\mathe\\Desktop\\InstagramAndroid\\ParseStarterProject\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\24.2.1\\res\\drawable-hdpi-v4\\abc_btn_switch_to_on_mtrl_00012.9.png"
     },

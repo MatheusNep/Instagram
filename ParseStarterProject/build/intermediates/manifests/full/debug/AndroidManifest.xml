@@ -46,6 +46,15 @@
             android:name="com.parse.starter.activity.MainActivity"
             android:label="" />
         <activity android:name="com.parse.starter.activity.RegisterActivity" />
+        <activity
+            android:name="com.parse.starter.activity.FeedUsersActivity"
+            android:label="@string/title_activity_feed_users"
+            android:parentActivityName="com.parse.starter.activity.MainActivity"
+            android:theme="@style/AppTheme" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.parse.starter.activity.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
