@@ -9,24 +9,28 @@ import android.support.v4.content.ContextCompat;
 import android.text.SpannableString;
 import android.text.Spanned;
 import android.text.style.ImageSpan;
+import android.view.ViewGroup;
 
 import com.parse.starter.R;
 import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.fragments.UsersFragment;
 
 import java.lang.reflect.Array;
+import java.util.HashMap;
 
 public class TabsAdapter extends FragmentStatePagerAdapter {
 
     private Context context;
     private int[] icon = new int[]{R.drawable.ic_action_home, R.drawable.ic_people};
     private int iconSize;
+    private HashMap<Integer, Fragment> utilityFragment;
 
     public TabsAdapter(FragmentManager fm, Context c) {
         super(fm);
         this.context = c;
         double scale = this.context.getResources().getDisplayMetrics().density;
         iconSize = (int) (36 * scale);
+        this.utilityFragment = new HashMap<>();
     }
 
     @Override
@@ -35,12 +39,23 @@ public class TabsAdapter extends FragmentStatePagerAdapter {
         switch (position){
             case 0:
                 fragment = new HomeFragment();
+                utilityFragment.put(position, fragment);
                 break;
             case 1:
                 fragment = new UsersFragment();
                 break;
         }
         return fragment;
+
+    }
+
+    @Override
+    public void destroyItem(ViewGroup container, int position, Object object) {
+        utilityFragment.remove(position);
+    }
+
+    public Fragment getFragment(Integer index){
+        return utilityFragment.get(index);
 
     }
 

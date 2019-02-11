@@ -39,6 +39,7 @@ import com.parse.SaveCallback;
 import com.parse.SignUpCallback;
 import com.parse.starter.R;
 import com.parse.starter.adapter.TabsAdapter;
+import com.parse.starter.fragments.HomeFragment;
 import com.parse.starter.useful.SlidingTabLayout;
 
 import java.io.ByteArrayOutputStream;
@@ -145,6 +146,9 @@ public class MainActivity extends AppCompatActivity {
                     public void done(ParseException e) {
                         if (e==null){
                             Toast.makeText(MainActivity.this,"Your image is shared", Toast.LENGTH_LONG).show();
+                            TabsAdapter newAdapter = (TabsAdapter) viewPager.getAdapter();
+                            HomeFragment newHomeFragment = (HomeFragment) newAdapter.getFragment(0);
+                            newHomeFragment.updatePost();
 
                         }else {
                             Toast.makeText(MainActivity.this,"Error in share image - try again", Toast.LENGTH_LONG).show();
